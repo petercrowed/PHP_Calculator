@@ -12,7 +12,7 @@
         <input class="calc-operation" type="text" id="inputField" name="inputBlock"></p>
 
         <div class="calc-typed"><span class="blink-me">    <?php
-            $first = $_POST['inputBlock'];
+            $first = $_POST['inputBlock'] ?? '';;
 
 
           $p = eval('return '.  $first. ';');
